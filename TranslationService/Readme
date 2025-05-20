@@ -1,1 +1,34 @@
+# 🌐 Multi-Language Translation API
+
+A RESTful API built with ASP.NET Core that provides text translation services across multiple languages using Azure Cognitive Services Translator API.
+
+---
+
+## 🚀 Features
+
+- Translate text between supported languages
+- Azure Cognitive Services integration
+- RESTful API with simple endpoints
+- Configurable with your Azure Translator key and region
+- Clean architecture and easily extensible
+
+---
+
+## 🧰 Tech Stack
+
+- ASP.NET Core Web API
+- C#
+- Azure Translator Text API
+- Swagger for API testing
+- Newtonsoft.Json
+
+---
+
+## 🏁 Getting Started
+
+### 1. Clone the Repository
+
+```bash
+git clone https://github.com/your-username/MultiLanguageTranslationAPI.git
+cd MultiLanguageTranslationAPI
 
