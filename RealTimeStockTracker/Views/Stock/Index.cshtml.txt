@@ -1,0 +1,27 @@
+@model StockInfo
+
+@{
+    ViewData["Title"] = "Real-Time Stock Tracker";
+}
+
+<h2>@ViewData["Title"]</h2>
+
+<form method="post" asp-controller="Stock" asp-action="Index">
+    <input type="text" name="symbol" placeholder="Enter stock symbol (e.g., MSFT)" />
+    <button type="submit">Get Stock</button>
+</form>
+
+@if (ViewBag.Error != null)
+{
+    <p style="color:red">@ViewBag.Error</p>
+}
+
+@if (Model != null)
+{
+    <h3>Stock Information for @Model.Symbol</h3>
+    <ul>
+        <li>Price: $@Model.Price</li>
+        <li>Change Percent: @Model.ChangePercent</li>
+        <li>Last Trading Day: @Model.LastTradingDay</li>
+    </ul>
+}
