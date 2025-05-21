@@ -11,7 +11,6 @@ namespace RealTimeStockTracker.Services
     {
         private readonly HttpClient _httpClient;
         private readonly IConfiguration _configuration;
-
         public StockService(HttpClient httpClient, IConfiguration configuration)
         {
             _httpClient = httpClient;
